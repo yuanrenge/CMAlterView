@@ -1,15 +1,14 @@
 
 Pod::Spec.new do |s|
 
-
   s.name         = "CMAlterView"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "A tool about alert box and prompt box"
-  s.description  = <<-DESC
-                    alert box,prompt box
-                   DESC
+  #  s.description  = <<-DESC
+  #               alert box,prompt box
+  #              DESC
   s.homepage     = "https://github.com/yuanrenge/CMAlterView"
-
+  s.ios.deployment_target = '7.0'
   s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
@@ -19,5 +18,6 @@ Pod::Spec.new do |s|
   s.source_files  = "CMAlterView", "CMAlterView/*"
   s.requires_arc = true
 
+  s.framework = 'UIKit'
 
 end
